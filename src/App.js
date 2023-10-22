@@ -1,22 +1,16 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import Navbar from './components/navbar'; // Import the Navbar component
+import JobListing from './components/joblisting'; // Import the JobListing component
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <Navbar /> {/* Include the Navbar component */}
+        
+        {/* Render the JobListing component here */}
+        <JobListing />
       </header>
     </div>
   );
