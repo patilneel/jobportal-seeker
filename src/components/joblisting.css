@@ -50,3 +50,16 @@
   font-size: 16px;
   color: var(--text-color); /* Use text color for job description */
 }
+
+/*  popup CSS file */
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  z-index: 999;
+  text-align: center;
+}

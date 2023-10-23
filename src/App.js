@@ -1,17 +1,30 @@
 import React from 'react';
 import './App.css';
-import Navbar from './components/navbar'; // Import the Navbar component
-import JobListing from './components/joblisting'; // Import the JobListing component
+import Navbar from './components/navbar'; 
+import JobListing from './components/joblisting'; 
+import JobApplication from './components/jobapplication'; 
+import Home from './components/home';
+import Login from './components/login';
+import Register from './components/register';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'; // Import BrowserRouter, Route, and Routes
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <Navbar /> {/* Include the Navbar component */}
-        
-        {/* Render the JobListing component here */}
-        <JobListing />
-      </header>
+      <Router>
+        <header className="App-header">
+          <Navbar />
+          
+          {/* Define your routes using Routes */}
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/register" element={<Register />} />
+            <Route path="/joblisting" element={<JobListing />} />
+            <Route path="/jobapplication/:jobId" element={<JobApplication />} />
+          </Routes>
+        </header>
+      </Router>
     </div>
   );
 }
