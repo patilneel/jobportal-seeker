@@ -1,6 +1,6 @@
-/* JobListing.css */
 
-/* Define official colors as CSS variables */
+
+/* its Define official colors as CSS variables */
 :root {
   --primary-color: #007bff; /* Official primary color */
   --secondary-color: #6c757d; /* Official secondary color */
@@ -20,10 +20,10 @@
 /* Individual job listing card */
 .job-card {
   width: 30%;
-  border: 1px solid var(--primary-color); /* Use primary color for border */
+  border: 1px solid var(--primary-color); 
   padding: 20px;
   margin: 10px;
-  background-color: var(--background-color); /* Use background color variable */
+  background-color: var(--background-color); 
   border-radius: 5px;
 }
 
@@ -32,23 +32,23 @@
   font-size: 20px;
   font-weight: bold;
   margin-bottom: 10px;
-  color: var(--secondary-color); /* Use secondary color for job title */
+  color: var(--secondary-color); 
 }
 
-/* Company name, Job location, Salary, Posted date, and Application deadline */
+
 .company-name,
 .job-location,
 .salary,
 .posted-date,
 .application-deadline {
   font-size: 16px;
-  color: var(--subtext-color); /* Use subtext color for these elements */
+  color: var(--subtext-color); 
 }
 
 /* Job description */
 .job-description {
   font-size: 16px;
-  color: var(--text-color); /* Use text color for job description */
+  color: var(--text-color); 
 }
 
 /*  popup CSS file */

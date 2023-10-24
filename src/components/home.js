@@ -55,12 +55,12 @@ class Home extends Component {
           >
             Register
           </Button>
-          {/* Add other menu items as needed */}
+          {/* */}
         </nav>
 
         {/* Hidden Elements (like tooltips) */}
         <div className="hidden-elements">
-          {/* Add hidden elements here */}
+          {/* */}
         </div>
 
         {/* Main Section with Job Listings */}
@@ -76,9 +76,9 @@ class Home extends Component {
         <footer className="footer">
           <div className="about">
             <h3>About Us</h3>
-            {/* Add about content here */}
+            {/*  */}
           </div>
-          {/* Add other footer components as needed */}
+          {/* Add other footer components here  */}
         </footer>
       </div>
     );

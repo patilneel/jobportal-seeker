@@ -15,7 +15,7 @@ function App() {
       <Router>
         <header className="App-header">
                 
-          {/* Define your routes using Routes */}
+          {/* Define  routes using Routes */}
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/login" element={<Login />} />

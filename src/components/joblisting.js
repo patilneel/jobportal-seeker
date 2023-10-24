@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import 'bootstrap/dist/css/bootstrap.css'; // Import Bootstrap CSS
-import Modal from 'react-bootstrap/Modal'; // Import Bootstrap Modal component
-import Button from 'react-bootstrap/Button'; // Import Bootstrap Button component
+import 'bootstrap/dist/css/bootstrap.css'; 
+import Modal from 'react-bootstrap/Modal'; 
+import Button from 'react-bootstrap/Button'; 
 import axios from 'axios';
 import './joblisting.css';
 import JobApplication from './jobapplication';
@@ -14,9 +14,9 @@ class JobListing extends Component {
   };
 
   componentDidMount() {
-    // Make an API request to your JobController
+    // Make an API request to  JobController
     axios
-      .get('https://localhost:7197/api/jobs')
+      .get('https://localhost:5207/api/jobs')
       .then((response) => {
         this.setState({ jobListings: response.data });
       })

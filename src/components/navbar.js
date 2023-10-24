@@ -7,7 +7,7 @@ const Navbar = () => {
         <span>Beekin's Official Jobs Portal</span>
       </div>
       <div className="menu">        
-        {/* Add other menu items as needed */}
+        {/* Add other menu  */}
       </div>
     </nav>
   );
