@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import 'bootstrap/dist/css/bootstrap.css'; // Import Bootstrap CSS
+import 'bootstrap/dist/css/bootstrap.css'; 
 import './jobapplication.css';
 
 
@@ -32,7 +32,7 @@ class JobApplication extends Component {
     formData.append('ResumeFile', this.state.resumeFile);
 
     axios
-      .post('https://localhost:7197/api/applications', formData, {
+      .post('https://localhost:5207/api/applications', formData, {
         headers: {
           'Content-Type': 'multipart/form-data',
         },

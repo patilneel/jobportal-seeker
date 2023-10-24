@@ -12,7 +12,7 @@ const Candidate = () => {
   });
 
   useEffect(() => {
-    // Fetch the list of candidates when the component mounts
+    // the list of candidates when the component mounts
     axios.get('/api/candidates')
       .then((response) => {
         setCandidates(response.data);
